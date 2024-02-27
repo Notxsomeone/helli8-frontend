@@ -2,7 +2,28 @@
 <html>
 <head>
 
-<style>
+<style>#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -32,7 +53,7 @@ h2 {
 <body>
 
 <h2>مقایسه قیمت صرافی های ایران</h2>
-<table>
+<table class="table" id="customers" >
   <tr>
 
     <th class="style"><i><img style="width: 60px;height: 50px top: 10px;" src="./bitpin/download.png" alt=""></i>bitpin</th>
@@ -41,16 +62,10 @@ h2 {
     <th class="style">max</th>
     <th class="style"> <img style="width: 50px;height: 50px;" src="./newbitx/download (1).png" alt="">nobitex</th>
 <th class="style"></th>
+<script src="script.js"></script>
    
   </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="arz">IRR</td>
-  </tr>
+
   <tr>
     <td></td>
     <td></td>
@@ -59,15 +74,17 @@ h2 {
     <td></td>
     <td class="arz">tehter</td>
   </tr>
+
   <tr>
-    <td></td>
-    <td></td>
+    <td id="irr" class="arz"></td>
+    <td id="irr2" class="arz"></td>
     <td></td>
     <td></td>
     <td></td>
     <td class="arz">bitcoin</td>
   </tr>
   <tr>
+    <td id="irr" class="arz"></td>
     <td></td>
     <td></td>
     <td></td>
