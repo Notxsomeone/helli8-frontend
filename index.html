@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<style>#customers {
+<style>
+#customers {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
@@ -17,13 +17,6 @@
 
 #customers tr:hover {background-color: #ddd;}
 
-#customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #04AA6D;
-  color: white;
-}
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -46,71 +39,89 @@ h2 {
 
 .style {
   width: 100px;
+  text-align: center;  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.bob {
+  width: 100px;
   text-align: center;
+  background-color: brown;
 }
 </style>
 </head>
 <body>
-
 <h2>مقایسه قیمت صرافی های ایران</h2>
-<table class="table" id="customers" >
-  <tr>
 
+<table class="table" id="customers" >
+
+  <tr>
     <th class="style"><i><img style="width: 60px;height: 50px top: 10px;" src="./bitpin/download.png" alt=""></i>bitpin</th>
     <th class="style">ramz </th>
-    <th class="style">min</th>
-    <th class="style">max</th>
     <th class="style"> <img style="width: 50px;height: 50px;" src="./newbitx/download (1).png" alt="">nobitex</th>
-<th class="style"></th>
-<script src="script.js"></script>
-   
+    <th class="bob">prices</th>
   </tr>
 
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="arz">tehter</td>
+    <td id="nob irr"></td>
+    <td id="irr"></td>
+    <td id="bit"></td>
+    <td class="arz">tehter buy irr</td>
   </tr>
 
   <tr>
-    <td id="irr" class="arz"></td>
+    <td id="nob usdt"></td>
+    <td id="usdt2" class="arz"></td>
+    <td id="bit1"></td>
+    <td class="arz">tehter buy usdt</td>
+  </tr>
+
+  <tr>
+    <td id="nob irr2" class="arz"></td>
     <td id="irr2" class="arz"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="arz">bitcoin</td>
+    <td id="bit2"></td>
+    <td class="arz">tehter sell irr</td>
   </tr>
-  <tr>
-    <td id="irr" class="arz"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="arz"></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="arz"></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td class="arz"></td>
 
+  <tr>
+    <td id="nob usdt2" class="arz"></td>
+    <td id="usdt" class="arz"></td>
+    <td id="bit3"></td>
+    <td class="arz">tehter sell usdt</td>
+  </tr>
+
+  <tr>
+    <td id="nob bit irr"></td>
+    <td id="bit irr"></td>
+    <td id="bit4"></td>
+    <td class="arz">bitcoin buy irr</td>
+  </tr>
+
+  <tr>
+    <td id="nob bit usdt"></td>
+    <td id="bit usdt"></td>
+    <td id="bit5"></td>
+    <td class="arz">bitcoin buy usdt</td>
+  </tr>
+
+  <tr>
+    <td id="nob bit irr2"></td>
+    <td id="bit irr2"></td>
+    <td id="bit6"></td>
+    <td class="arz">bitcoin sell irr</td>
+  </tr>
+
+  <tr>
+    <td id="nob bit usdt2"></td>
+    <td id="bit usdt2"></td>
+    <td id="bit7"></td>
+    <td class="arz">bitcoin sell usdt</td>
   </tr>
 </table>
-
+<script src="script.js"></script>
 </body>
 </html>
 
