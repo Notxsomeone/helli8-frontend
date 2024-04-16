@@ -8,7 +8,8 @@ async function load(url) {
 	// Row generation
 	const coins = Object.keys(json[brokers[0]]);
 	let index = 0;
-	for (let i = 0; i < coins.length - 1;) {
+	console.log(coins)
+	for (let i = 0; i < coins.length-1;) {
 		let row = document.createElement("tr");
 		row.classList.add('styled-table')
 		let img = document.createElement("img");
@@ -33,7 +34,6 @@ async function load(url) {
 
 			cell.innerHTML = priceStr;
 			row.appendChild(cell);
-
 		}
 
 		let cell = document.createElement("th");
@@ -61,10 +61,10 @@ async function load(url) {
 	}
 	var element = document.getElementById("loading");
 	element.remove();
-	console.log($(`img[src*="BTC"]`).parents('th'));
+	
 	$(`img[src*="BTC"]`).parents('th').css("background-color", "#ed9b53");
 	$(`img[src*="USDT"]`).parents('th').css("background-color", "#16a085");
-	$(`img[src*="BTH"]`).parents('th').css("background-color", "#16a085");
+	$(`img[src*="ETH"]`).parents('th').css("background-color", "#4f515c");
 	$(`img[src*="USDT"]`).parents('th').css("background-color", "#16a085");
 }
 load("http://172.19.10.51:5000");
