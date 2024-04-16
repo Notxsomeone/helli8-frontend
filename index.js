@@ -10,6 +10,7 @@ async function load(url) {
 	let index = 0;
 	for (let i = 0; i < coins.length - 1; ) {
 		let row = document.createElement("tr");
+		row.classList.add('styled-table')
 		let img = document.createElement("img");
 		img.classList.add('right-image');
 		img.width = 50 ; 
@@ -54,6 +55,6 @@ async function load(url) {
 	var element = document.getElementById("loading");
 	element.classList.remove("loading");
 }
-//load("http://192.168.100.47:5000");
-load("http://127.0.0.1:5000");
-;
+load("http://172.19.10.51:5000");
+// load("http://127.0.0.1:5000");
+
