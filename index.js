@@ -20,7 +20,7 @@ async function load(url) {
 				i++;
 				index = 0;
 			}
-			img.src ="img/" + coins[i].toUpperCase() + ".png"
+			img.src ="img/" + coins[i].toUpperCase() + ".svg"
 
 			const prices = Object.values(json[brokers[j]][coins[i]]);
 			let cell = document.createElement("th");
