@@ -20,7 +20,7 @@ async function load(url) {
 				i++;
 				index = 0;
 			}
-			img.src = "img/" + coins[i].toUpperCase() + ".png"
+			img.src ="img/" + coins[i].toUpperCase() + ".svg"
 
 			const prices = Object.values(json[brokers[j]][coins[i]]);
 			let cell = document.createElement("th");
@@ -66,8 +66,6 @@ async function load(url) {
 	$(`img[src*="USDT"]`).parents('th').css("background-color", "#16a085");
 	$(`img[src*="BTH"]`).parents('th').css("background-color", "#16a085");
 	$(`img[src*="USDT"]`).parents('th').css("background-color", "#16a085");
-
-
 }
 load("http://172.19.10.51:5000");
 // load("http://127.0.0.1:5000");
