@@ -60,7 +60,7 @@ async function load(url) {
 		table.appendChild(row);
 	}
 	var element = document.getElementById("loading");
-	element.classList.remove("loading");
+	element.remove();
 	console.log($(`img[src*="BTC"]`).parents('th'));
 	$(`img[src*="BTC"]`).parents('th').css("background-color", "#ed9b53");
 	$(`img[src*="USDT"]`).parents('th').css("background-color", "#16a085");
