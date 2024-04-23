@@ -9,7 +9,7 @@ async function load(url) {
 	const coins = Object.keys(json[brokers[0]]);
 	let index = 0;
 	console.log(coins)
-	for (let i = 0; i < coins.length-1;) {
+	for (let i = 0; i < coins.length;) {
 		let row = document.createElement("tr");
 		row.classList.add('styled-table')
 		let img = document.createElement("img");
@@ -17,10 +17,6 @@ async function load(url) {
 		img.width = 50;
 
 		for (let j = 0; j < brokers.length; j++) {
-			if (index == 4) {
-				i++;
-				index = 0;
-			}
 			img.src ="img/" + coins[i].toUpperCase() + ".svg"
 
 			const prices = Object.values(json[brokers[j]][coins[i]]);
@@ -35,7 +31,7 @@ async function load(url) {
 			cell.innerHTML = priceStr;
 			row.appendChild(cell);
 		}
-
+		
 		let cell = document.createElement("th");
 		let str = coins[i].toUpperCase() + '/';
 
@@ -56,8 +52,13 @@ async function load(url) {
 		cell.innerHTML = str;
 		cell.appendChild(img);
 		row.appendChild(cell);
-		index++;
 		table.appendChild(row);
+
+		index++;
+		if (index == 4) {
+			i++;
+			index = 0;
+		}
 	}
 	var element = document.getElementById("loading");
 	element.remove();
