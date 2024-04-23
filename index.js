@@ -33,6 +33,7 @@ async function load(url) {
 		}
 		
 		let cell = document.createElement("th");
+		cell.classList.add('last-column');
 		let str = coins[i].toUpperCase() + '/';
 
 		switch (index) {
