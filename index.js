@@ -68,11 +68,11 @@ async function load(url) {
 	$(`img[src*="USDT"]`).parents('th').css("background-color", "#16a085");
 	$(`img[src*="ETH"]`).parents('th').css("background-color", "#4f515c");
 	$(`img[src*="TRX"]`).parents('th').css("background-color", "#e63f3c");
-	$(`img[src*="SHIB"]`).parents('th').css("background-color", "#eb5250");
-	$(`img[src*="MATIC"]`).parents('th').css("background-color", "#af07f7");
+	$(`img[src*="SHIB"]`).parents('th').css("background-color", "#fc9403");
+	$(`img[src*="MATIC"]`).parents('th').css("background-color", "#b242fc");
 	$(`img[src*="DOGE"]`).parents('th').css("background-color", "#dbb265");
-	$(`img[src*="SOL"]`).parents('th').css("background-color", "#1be3b4");
-	$(`img[src*="TON"]`).parents('th').css("background-color", "#1bb4e3");
+	$(`img[src*="SOL"]`).parents('th').css("background-color", "#bd36f7");
+	$(`img[src*="TON"]`).parents('th').css("background-color", "#02a3d4");
 }
 load("http://172.19.10.51:5000");
 // load("http://127.0.0.1:5000");
