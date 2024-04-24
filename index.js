@@ -67,13 +67,14 @@ async function load(url) {
 	$(`img[src*="BTC"]`).parents('th').css("background-color", "#ed9b53");
 	$(`img[src*="USDT"]`).parents('th').css("background-color", "#16a085");
 	$(`img[src*="ETH"]`).parents('th').css("background-color", "#4f515c");
-	$(`img[src*="TRX"]`).parents('th').css("background-color", "#e63f3c");
+	$(`img[src*="TRX"]`).parents('th').css("background-color", "#eb7575");
 	$(`img[src*="SHIB"]`).parents('th').css("background-color", "#fc9403");
-	$(`img[src*="MATIC"]`).parents('th').css("background-color", "#b242fc");
+	$(`img[src*="MATIC"]`).parents('th').css("background-color", "#ce93f5");
 	$(`img[src*="DOGE"]`).parents('th').css("background-color", "#dbb265");
-	$(`img[src*="SOL"]`).parents('th').css("background-color", "#bd36f7");
-	$(`img[src*="TON"]`).parents('th').css("background-color", "#02a3d4");
+	$(`img[src*="SOL"]`).parents('th').css("background-color", "#52ccc8");
+	$(`img[src*="TON"]`).parents('th').css("background-color", "#25bddb");
 }
 load("http://172.19.10.51:5000");
 // load("http://127.0.0.1:5000");
 
+// 03d3fc
