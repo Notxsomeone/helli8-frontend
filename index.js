@@ -76,5 +76,3 @@ async function load(url) {
 }
 load("http://172.19.10.51:5000");
 // load("http://127.0.0.1:5000");
-
-// 03d3fc
