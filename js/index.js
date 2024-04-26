@@ -1,6 +1,12 @@
-async function load(url) {
-	const res = await fetch(url);
+
+async function fetchJson(uri) {
+	const res = await fetch(uri);
 	const json = await res.json();
+	return json;
+}
+
+async function load() {
+	const json = await fetchJson((await fetchJson("../config.json")).api_endpoint);
 
 	let table = document.getElementById("table");
 	const brokers = Object.keys(json);
@@ -8,7 +14,6 @@ async function load(url) {
 	// Row generation
 	const coins = Object.keys(json[brokers[0]]);
 	let index = 0;
-	console.log(coins)
 	for (let i = 0; i < coins.length;) {
 		let row = document.createElement("tr");
 		row.classList.add('styled-table')
@@ -17,7 +22,7 @@ async function load(url) {
 		img.width = 50;
 
 		for (let j = 0; j < brokers.length; j++) {
-			img.src ="img/" + coins[i].toUpperCase() + ".svg"
+			img.src ="img/coins/" + coins[i].toUpperCase() + ".svg"
 
 			const prices = Object.values(json[brokers[j]][coins[i]]);
 			let cell = document.createElement("th");
@@ -74,5 +79,4 @@ async function load(url) {
 	$(`img[src*="SOL"]`).parents('th').css("background-color", "#52ccc8");
 	$(`img[src*="TON"]`).parents('th').css("background-color", "#25bddb");
 }
-load("http://172.19.10.51:5000");
-// load("http://127.0.0.1:5000");
+load();
