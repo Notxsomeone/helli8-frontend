@@ -22,7 +22,7 @@ async function load() {
 		img.width = 50;
 
 		for (let j = 0; j < brokers.length; j++) {
-			img.src ="img/coins/" + coins[i].toUpperCase() + ".svg"
+			img.src ="images/coins/" + coins[i].toUpperCase() + ".svg"
 
 			const prices = Object.values(json[brokers[j]][coins[i]]);
 			let cell = document.createElement("th");
