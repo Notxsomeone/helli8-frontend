@@ -7,7 +7,6 @@ async function fetchJson(uri) {
 
 async function load() {
 	const json = await fetchJson((await fetchJson("../config.json")).api_endpoint);
-
 	let table = document.getElementById("table");
 	const brokers = Object.keys(json);
 
@@ -22,12 +21,12 @@ async function load() {
 		img.width = 50;
 
 		for (let j = 0; j < brokers.length; j++) {
-			img.src ="img/coins/" + coins[i].toUpperCase() + ".svg"
+			img.src = "img/coins/" + coins[i].toUpperCase() + ".svg"
 
 			const prices = Object.values(json[brokers[j]][coins[i]]);
 			let cell = document.createElement("th");
 
-			let priceStr =  "قیمت ناموجود"
+			let priceStr = "قیمت ناموجود"
 			if (prices[index]) {
 				priceStr = prices[index].toLocaleString();
 				index < 2 ? priceStr += 'ريال' : priceStr += '$';
@@ -36,7 +35,7 @@ async function load() {
 			cell.innerHTML = priceStr;
 			row.appendChild(cell);
 		}
-		
+
 		let cell = document.createElement("th");
 		cell.classList.add('last-column');
 		let str = coins[i].toUpperCase() + '/';
@@ -68,7 +67,7 @@ async function load() {
 	}
 	var element = document.getElementById("loading");
 	element.remove();
-	
+
 	$(`img[src*="BTC"]`).parents('th').css("background-color", "#ed9b53");
 	$(`img[src*="USDT"]`).parents('th').css("background-color", "#16a085");
 	$(`img[src*="ETH"]`).parents('th').css("background-color", "#4f515c");
