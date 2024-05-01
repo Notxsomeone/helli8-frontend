@@ -1,0 +1,83 @@
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: #009879;
+}
+
+.right-image {
+  float: right;
+}
+
+tr:nth-child(2n+1) {
+  background-color: #f0eded;
+}
+
+tr:nth-child(2n+2) {
+  background-color: #e0dede;
+}
+
+tr:nth-child(2n+2) {
+  border-bottom: 2px solid #009879;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+  /* tr  img[src*="BTC"]{
+  background-color: yellow;
+}
+ */
+th {
+  border-left: 2px groove #009879;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+tr:hover :not(.last-column):not(.last-column2) {
+  font-weight: bold;
+  color: #009879;
+}
+
+th{
+  font-family: vazir;
+  text-align: center;
+}
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+

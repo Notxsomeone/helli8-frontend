@@ -1,3 +1,6 @@
 {
-	"api_endpoint": "http://172.19.10.51:5000"
+    "api_endpoint": "http://127.0.0.1:5000",
+    "nobitex_image": "https://nobitex.ir/_nuxt/img/Logo_FA-Dark.e3f3bdb.svg",
+    "ramzinex_image": "https://ramzinex.com/images/logo/ramzinex-logo.svg",
+    "bitpin_image": "https://bitpin.ir/static/media/logo1-dark.b478b610b7b0af73e81cb063251c1242.svg"
 }

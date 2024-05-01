@@ -3,29 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        select , option{
-            width: 200px;
-            background-color: black;
-            color: aliceblue;
-            font-size: 30px;
-        }
-        option{
-            height: 50px;
-            box-sizing: border-box;
-            background-color: rgb(30,30,30);
-
-        }
-    </style><script src="./js/arb.js"></script>
+    <title>Ramzinesh</title>
+    <link href="./css/arb.css" rel="stylesheet">
+    <link rel="preconnect" href="//v1.fontapi.ir">
+    <link href="https://v1.fontapi.ir/css/Vazir" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="">
 </head>
 <body>
-    <select name="select" id="">
-        <option value="1">v1</option>
-        <option value="2">v2</option>
-        <option value="3">v3</option>
-        <option value="4">v4</option>
-        <option value="5">v5</option>
-    </select>
+    <table id="table" class="styled-table">
+        <tr class="styled-table" style="border-top: 2px solid #009879;">
+            <th>Sell - Buy Arbitrage</th>
+            <th>Buy - Sell Arbitrage</th>
+            <th>Selling price</th>
+            <th>Broker to sell to</th>
+            <th>Buying price</th>
+            <th>Broker to buy from</th>
+            <th>Coin</th>
+        </tr>
+    </table>
+    <script src="./js/arb.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </body>
 </html>
